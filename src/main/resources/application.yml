@@ -1,0 +1,15 @@
+spring:
+  spring:
+    data:
+      mongodb:
+        uri: mongodb://localhost:27017/mydatabase
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: my-group
+    streams:
+      application-id: my-streams-app
+
+kafka:
+  topics:
+    - test-topic
