@@ -27,6 +27,8 @@ services:
 
   mongodb: # <-- This is the new service definition for MongoDB
     image: mongo:latest
+    #For M series Macs (Colima), latest Mongo will not work. Please use:
+    #image: mongo:4.4.6
     ports:
       - "27017:27017"
     volumes:
